@@ -1,0 +1,534 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* font-size */
+
+.fsize1 {
+  font-size: 1px;
+}
+
+.fsize2 {
+  font-size: 2px;
+}
+
+.fsize3 {
+  font-size: 3px;
+}
+
+.fsize4 {
+  font-size: 4px;
+}
+
+.fsize5 {
+  font-size: 5px;
+}
+
+.fsize6 {
+  font-size: 6px;
+}
+
+.fsize7 {
+  font-size: 7px;
+}
+
+.fsize8 {
+  font-size: 8px;
+}
+
+.fsize9 {
+  font-size: 9px;
+}
+
+.fsize10 {
+  font-size: 10px;
+}
+
+.fsize11 {
+  font-size: 11px;
+}
+
+.fsize12 {
+  font-size: 12px;
+}
+
+.fsize13 {
+  font-size: 13px;
+}
+
+.fsize14 {
+  font-size: 14px;
+}
+
+.fsize15 {
+  font-size: 15px;
+}
+
+.fsize16 {
+  font-size: 16px;
+}
+
+.fsize17 {
+  font-size: 17px;
+}
+
+.fsize18 {
+  font-size: 18px;
+}
+
+.fsize19 {
+  font-size: 19px;
+}
+
+.fsize20 {
+  font-size: 20px;
+}
+
+.fsize21 {
+  font-size: 21px;
+}
+
+.fsize22 {
+  font-size: 22px;
+}
+
+.fsize23 {
+  font-size: 23px;
+}
+
+.fsize24 {
+  font-size: 24px;
+}
+
+.fsize25 {
+  font-size: 25px;
+}
+
+.fsize26 {
+  font-size: 26px;
+}
+
+.fsize27 {
+  font-size: 27px;
+}
+
+.fsize28 {
+  font-size: 28px;
+}
+
+.fsize29 {
+  font-size: 29px;
+}
+
+.fsize30 {
+  font-size: 30px;
+}
+
+.fsize31 {
+  font-size: 31px;
+}
+
+.fsize32 {
+  font-size: 32px;
+}
+
+.fsize33 {
+  font-size: 33px;
+}
+
+.fsize34 {
+  font-size: 34px;
+}
+
+.fsize35 {
+  font-size: 35px;
+}
+
+.fsize36 {
+  font-size: 36px;
+}
+
+.fsize37 {
+  font-size: 37px;
+}
+
+.fsize38 {
+  font-size: 38px;
+}
+
+.fsize39 {
+  font-size: 39px;
+}
+
+.fsize40 {
+  font-size: 40px;
+}
+
+.fsize41 {
+  font-size: 41px;
+}
+
+.fsize42 {
+  font-size: 42px;
+}
+
+.fsize43 {
+  font-size: 43px;
+}
+
+.fsize44 {
+  font-size: 44px;
+}
+
+.fsize45 {
+  font-size: 45px;
+}
+
+.fsize46 {
+  font-size: 46px;
+}
+
+.fsize47 {
+  font-size: 47px;
+}
+
+.fsize48 {
+  font-size: 48px;
+}
+
+.fsize49 {
+  font-size: 49px;
+}
+
+.fsize50 {
+  font-size: 50px;
+}
+
+.fsize51 {
+  font-size: 51px;
+}
+
+.fsize52 {
+  font-size: 52px;
+}
+
+.fsize53 {
+  font-size: 53px;
+}
+
+.fsize54 {
+  font-size: 54px;
+}
+
+.fsize55 {
+  font-size: 55px;
+}
+
+.fsize56 {
+  font-size: 56px;
+}
+
+.fsize57 {
+  font-size: 57px;
+}
+
+.fsize58 {
+  font-size: 58px;
+}
+
+.fsize59 {
+  font-size: 59px;
+}
+
+.fsize60 {
+  font-size: 60px;
+}
+
+.fsize61 {
+  font-size: 61px;
+}
+
+.fsize62 {
+  font-size: 62px;
+}
+
+.fsize63 {
+  font-size: 63px;
+}
+
+.fsize64 {
+  font-size: 64px;
+}
+
+@media  (max-width: 640px){
+  .sm-fsize1 {
+    font-size: 1px;
+  }
+  
+  .sm-fsize2 {
+    font-size: 2px;
+  }
+  
+  .sm-fsize3 {
+    font-size: 3px;
+  }
+  
+  .sm-fsize4 {
+    font-size: 4px;
+  }
+  
+  .sm-fsize5 {
+    font-size: 5px;
+  }
+  
+  .sm-fsize6 {
+    font-size: 6px;
+  }
+  
+  .sm-fsize7 {
+    font-size: 7px;
+  }
+  
+  .sm-fsize8 {
+    font-size: 8px;
+  }
+  
+  .sm-fsize9 {
+    font-size: 9px;
+  }
+  
+  .sm-fsize10 {
+    font-size: 10px;
+  }
+  
+  .sm-fsize11 {
+    font-size: 11px;
+  }
+  
+  .sm-fsize12 {
+    font-size: 12px;
+  }
+  
+  .sm-fsize13 {
+    font-size: 13px;
+  }
+  
+  .sm-fsize14 {
+    font-size: 14px;
+  }
+  
+  .sm-fsize15 {
+    font-size: 15px;
+  }
+  
+  .sm-fsize16 {
+    font-size: 16px;
+  }
+  
+  .sm-fsize17 {
+    font-size: 17px;
+  }
+  
+  .sm-fsize18 {
+    font-size: 18px;
+  }
+  
+  .sm-fsize19 {
+    font-size: 19px;
+  }
+  
+  .sm-fsize20 {
+    font-size: 20px;
+  }
+  
+  .sm-fsize21 {
+    font-size: 21px;
+  }
+  
+  .sm-fsize22 {
+    font-size: 22px;
+  }
+  
+  .sm-fsize23 {
+    font-size: 23px;
+  }
+  
+  .sm-fsize24 {
+    font-size: 24px;
+  }
+  
+  .sm-fsize25 {
+    font-size: 25px;
+  }
+  
+  .sm-fsize26 {
+    font-size: 26px;
+  }
+  
+  .sm-fsize27 {
+    font-size: 27px;
+  }
+  
+  .sm-fsize28 {
+    font-size: 28px;
+  }
+  
+  .sm-fsize29 {
+    font-size: 29px;
+  }
+  
+  .sm-fsize30 {
+    font-size: 30px;
+  }
+  
+  .sm-fsize31 {
+    font-size: 31px;
+  }
+  
+  .sm-fsize32 {
+    font-size: 32px;
+  }
+  
+  .sm-fsize33 {
+    font-size: 33px;
+  }
+  
+  .sm-fsize34 {
+    font-size: 34px;
+  }
+  
+  .sm-fsize35 {
+    font-size: 35px;
+  }
+  
+  .sm-fsize36 {
+    font-size: 36px;
+  }
+  
+  .sm-fsize37 {
+    font-size: 37px;
+  }
+  
+  .sm-fsize38 {
+    font-size: 38px;
+  }
+  
+  .sm-fsize39 {
+    font-size: 39px;
+  }
+  
+  .sm-fsize40 {
+    font-size: 40px;
+  }
+  
+  .sm-fsize41 {
+    font-size: 41px;
+  }
+  
+  .sm-fsize42 {
+    font-size: 42px;
+  }
+  
+  .sm-fsize43 {
+    font-size: 43px;
+  }
+  
+  .sm-fsize44 {
+    font-size: 44px;
+  }
+  
+  .sm-fsize45 {
+    font-size: 45px;
+  }
+  
+  .sm-fsize46 {
+    font-size: 46px;
+  }
+  
+  .sm-fsize47 {
+    font-size: 47px;
+  }
+  
+  .sm-fsize48 {
+    font-size: 48px;
+  }
+  
+  .sm-fsize49 {
+    font-size: 49px;
+  }
+  
+  .sm-fsize50 {
+    font-size: 50px;
+  }
+  
+  .sm-fsize51 {
+    font-size: 51px;
+  }
+  
+  .sm-fsize52 {
+    font-size: 52px;
+  }
+  
+  .sm-fsize53 {
+    font-size: 53px;
+  }
+  
+  .sm-fsize54 {
+    font-size: 54px;
+  }
+  
+  .sm-fsize55 {
+    font-size: 55px;
+  }
+  
+  .sm-fsize56 {
+    font-size: 56px;
+  }
+  
+  .sm-fsize57 {
+    font-size: 57px;
+  }
+  
+  .sm-fsize58 {
+    font-size: 58px;
+  }
+  
+  .sm-fsize59 {
+    font-size: 59px;
+  }
+  
+  .sm-fsize60 {
+    font-size: 60px;
+  }
+  
+  .sm-fsize61 {
+    font-size: 61px;
+  }
+  
+  .sm-fsize62 {
+    font-size: 62px;
+  }
+  
+  .sm-fsize63 {
+    font-size: 63px;
+  }
+  
+  .sm-fsize64 {
+    font-size: 64px;
+  }
+  
+}
+
+.h-500px {
+  height: 500px;
+}
