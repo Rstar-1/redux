@@ -3,7 +3,7 @@ import TableData from '../components/TableData';
 
 const Home = () => {
   return (
-    <div>     
+    <div>   
       <TableData/>
     </div>
   )
