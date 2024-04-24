@@ -46,13 +46,11 @@ const TableData = () => {
       </h2>
 
       <div className="w-full flex">
-      <div className={`${grids ? "grid grid-cols-4" : "grid grid-cols-3"}`}>
+        {/* <div className={`${grids ? "grid grid-cols-4" : "grid grid-cols-3"}`}>
         {allProducts && allProducts.length > 0
           ? allProducts.map((item) => <p className="border">{item.title}</p>)
           : "nodata"}
-      </div>
-      <div className="">
-      </div>
+      </div> */}
 
       </div>
 
@@ -61,6 +59,7 @@ const TableData = () => {
           <Thead>
             <Tr>
               <Th className="border border-slate-400">ID</Th>
+              <Th className="border border-slate-400">Category</Th>
               <Th className="border border-slate-400">Title</Th>
               <Th className="border border-slate-400">Price</Th>
               <Th className="border border-slate-400">Description</Th>
@@ -69,16 +68,21 @@ const TableData = () => {
 
           {allProducts && allProducts.length > 0 ? (
             allProducts.map((item) => (
-              <Tbody>
-                <Tr key={item.id}>
-                  <Td className="border border-slate-400">{item.id}</Td>
-                  <Td className="border border-slate-400">{item.title}</Td>
-                  <Td className="border border-slate-400">{item.price}</Td>
-                  <Td className="border border-slate-400">
-                    {item.description}
-                  </Td>
-                </Tr>
-              </Tbody>
+              <>
+                {item.category === "men's clothing" ?
+                  <Tbody>
+                    <Tr key={item.id}>
+                      <Td className="border border-slate-400">{item.id}</Td>
+                      <Td className="border border-slate-400">{item.category}</Td>
+                      <Td className="border border-slate-400">{item.title}</Td>
+                      <Td className="border border-slate-400">{item.price}</Td>
+                      <Td className="border border-slate-400">
+                        {item.description}
+                      </Td>
+                    </Tr>
+                  </Tbody> : null
+                }
+              </>
             ))
           ) : (
             <Tr>

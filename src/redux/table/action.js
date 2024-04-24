@@ -26,7 +26,6 @@ export const fetchAllProducts = () => {
       const data = await response.data;
       console.log(data, "SSS");
       dispatch(fetchProductSuccess(data));
-      console.log(data, "SSSSSS");
     } catch (error) {
       dispatch(fetchProductFailure(error.message));
     }
