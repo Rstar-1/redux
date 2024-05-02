@@ -1,4 +1,4 @@
-import apis from '../../apis/product'
+import apis from '../../apis/product';
 
 export const FETCH_REQUEST = "FETCH_REQUEST";
 export const FETCH_SUCCESS = "FETCH_SUCCESS";
@@ -18,7 +18,7 @@ export const fetchProductFailure = (error) => ({
   payload: error,
 });
 
-export const fetchAllProducts = (payload) => {
+export const getallProducts = (payload) => {
   return async (dispatch) => {
 
     try {
@@ -30,6 +30,13 @@ export const fetchAllProducts = (payload) => {
     }
   };
 };
+
+export const setproduct = (data) => {
+  return {
+    type: 'setproduct',
+    payload:data,
+  }
+}
 
 // export const fetchAllProducts = () => {
 //   return async (dispatch) => {

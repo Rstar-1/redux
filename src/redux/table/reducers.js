@@ -1,7 +1,7 @@
 import { FETCH_REQUEST, FETCH_SUCCESS, FETCH_FAILURE } from "./action";
 
 const initialState = {
-  products: [],
+  product: [],
   loading: false,
   error: null,
 };
@@ -10,7 +10,7 @@ const productsReducer = (state = initialState, action) => {
   switch (action.type) {
     case "setproduct":
       return {
-        ...state, products: action.payload,
+        ...state, product: action.payload,
       }
     case FETCH_REQUEST:
       return {
@@ -19,11 +19,9 @@ const productsReducer = (state = initialState, action) => {
         error: null,
       };
     case FETCH_SUCCESS:
-      console.log(action.payload, "reducver");
       return {
         ...state,
         loading: false,
-        products: action.payload,
         error: null,
       };
     case FETCH_FAILURE:

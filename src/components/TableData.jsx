@@ -9,23 +9,16 @@ import {
   TableContainer,
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllProducts } from "../redux/table/action";
+import { getallProducts } from "../redux/table/action";
 
 const TableData = () => {
-  const [grids, setGrids] = useState(true);
-
-  const handleGrids = () => {
-    setGrids(!grids);
-  };
-
   const dispatch = useDispatch();
-  const allProducts = useSelector((state) => state.products);
-  const loading = useSelector((state) => state.loading);
-  const error = useSelector((state) => state.error);
-  console.log(allProducts);
+  const allProducts = useSelector((state) => state.reducers.products);
+  const loading = useSelector((state) => state.reducers.loading);
+  const error = useSelector((state) => state.reducers.error);
 
   useEffect(() => {
-    dispatch(fetchAllProducts());
+    dispatch(getallProducts());
   }, [dispatch]);
 
   if (loading) {
@@ -38,22 +31,6 @@ const TableData = () => {
 
   return (
     <div className="container mx-auto">
-      <h2 className="fsize24 text-center">
-        Table Data{" "}
-        <div className="cursor-pointer" onClick={handleGrids}>
-          Click me to toggle active class
-        </div>
-      </h2>
-
-      <div className="w-full flex">
-        {/* <div className={`${grids ? "grid grid-cols-4" : "grid grid-cols-3"}`}>
-        {allProducts && allProducts.length > 0
-          ? allProducts.map((item) => <p className="border">{item.title}</p>)
-          : "nodata"}
-      </div> */}
-
-      </div>
-
       <TableContainer className="border-collapse border border-slate-400 lg:mt-8">
         <Table variant="simple">
           <Thead>
@@ -68,8 +45,7 @@ const TableData = () => {
 
           {allProducts && allProducts.length > 0 ? (
             allProducts.map((item) => (
-              <>
-                {item.category === "men's clothing" ?
+             
                   <Tbody>
                     <Tr key={item.id}>
                       <Td className="border border-slate-400">{item.id}</Td>
@@ -80,9 +56,8 @@ const TableData = () => {
                         {item.description}
                       </Td>
                     </Tr>
-                  </Tbody> : null
-                }
-              </>
+                  </Tbody> 
+                
             ))
           ) : (
             <Tr>
