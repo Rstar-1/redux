@@ -1,4 +1,4 @@
-import axios from "axios";
+import apis from '../../apis/product'
 
 export const FETCH_REQUEST = "FETCH_REQUEST";
 export const FETCH_SUCCESS = "FETCH_SUCCESS";
@@ -18,16 +18,29 @@ export const fetchProductFailure = (error) => ({
   payload: error,
 });
 
-export const fetchAllProducts = () => {
+export const fetchAllProducts = (payload) => {
   return async (dispatch) => {
-    dispatch(fetchProductRequest());
+
     try {
-      const response = await axios.get("https://fakestoreapi.com/products");
-      const data = await response.data;
-      console.log(data, "SSS");
-      dispatch(fetchProductSuccess(data));
+      let { data } = await apis.getproduct(payload);
+      console.log(data, "fds")
+      dispatch(setproduct(data));
     } catch (error) {
       dispatch(fetchProductFailure(error.message));
     }
   };
 };
+
+// export const fetchAllProducts = () => {
+//   return async (dispatch) => {
+//     dispatch(fetchProductRequest());
+//     try {
+//       const response = await axios.get("https://fakestoreapi.com/products");
+//       const data = await response.data;
+//       console.log(data, "SSS");
+//       dispatch(fetchProductSuccess(data));
+//     } catch (error) {
+//       dispatch(fetchProductFailure(error.message));
+//     }
+//   };
+// };

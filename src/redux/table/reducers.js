@@ -8,6 +8,10 @@ const initialState = {
 
 const productsReducer = (state = initialState, action) => {
   switch (action.type) {
+    case "setproduct":
+      return {
+        ...state, products: action.payload,
+      }
     case FETCH_REQUEST:
       return {
         ...state,
